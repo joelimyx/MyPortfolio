@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
     }
 
     @Override
@@ -36,6 +38,26 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    @OnClick(R.id.spotifyButton)
+    public void toastSpotifyApp(){
+        Toast.makeText(this, "This will launch Spotify Streamer App", Toast.LENGTH_LONG).show();
+    }
+    @OnClick(R.id.scoreAppButton)
+    public void toastScoreApp(){
+        Toast.makeText(this, "This will launch Score App", Toast.LENGTH_SHORT).show();
+    }
+    @OnClick(R.id.libraryAppButton)
+    public void toastLibraryApp(){
+        Toast.makeText(this, "This will launch Library App", Toast.LENGTH_SHORT).show();
+    }
+    @OnClick(R.id.buildItBiggerButton)
+    public void toastBuildItBiggerApp(){
+        Toast.makeText(this, "This will launch Build it Bigger App", Toast.LENGTH_SHORT).show();
+    }
+    @OnClick(R.id.XYZReaderButton)
+    public void toastXYZReaderApp(){
+        Toast.makeText(this, "This will launch XYZ Reader App", Toast.LENGTH_SHORT).show();
     }
     @OnClick(R.id.myOwnAppButton)
     public void toastMyOwnApp(){
