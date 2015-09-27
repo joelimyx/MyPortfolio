@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="@string/Spotify_Streamer"
+        android:id="@+id/spotifyButton"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentEnd="false"
+        android:textSize="20sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Score App"
+        android:id="@+id/scoreAppButton"
+        android:layout_below="@+id/spotifyButton"
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/spotifyButton"
+        android:layout_alignEnd="@+id/spotifyButton"
+        android:layout_alignLeft="@+id/spotifyButton"
+        android:layout_alignStart="@+id/spotifyButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Library App"
+        android:id="@+id/libraryAppButton"
+        android:layout_below="@+id/scoreAppButton"
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scoreAppButton"
+        android:layout_alignStart="@+id/scoreAppButton"
+        android:layout_alignRight="@+id/scoreAppButton"
+        android:layout_alignEnd="@+id/scoreAppButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Build it Bigger"
+        android:id="@+id/buildItBiggerButton"
+        android:layout_below="@+id/libraryAppButton"
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scoreAppButton"
+        android:layout_alignStart="@+id/scoreAppButton"
+        android:layout_alignRight="@+id/scoreAppButton"
+        android:layout_alignEnd="@+id/scoreAppButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/XYZReaderButton"
+        android:layout_below="@+id/buildItBiggerButton"
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="XYZ Reader App"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/libraryAppButton"
+        android:layout_alignStart="@+id/libraryAppButton"
+        android:layout_alignRight="@+id/libraryAppButton"
+        android:layout_alignEnd="@+id/libraryAppButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="This is my App"
+        android:id="@+id/myOwnAppButton"
+        android:layout_below="@+id/XYZReaderButton"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/XYZReaderButton"
+        android:layout_alignEnd="@+id/XYZReaderButton"
+        android:layout_alignLeft="@+id/XYZReaderButton"
+        android:layout_alignStart="@+id/XYZReaderButton"
+        android:background="@android:color/holo_purple"/>
+</RelativeLayout>
